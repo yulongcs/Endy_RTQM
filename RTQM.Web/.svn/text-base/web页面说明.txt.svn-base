@@ -1,0 +1,29 @@
+一、	原材料质量模块
+AddPurchase.aspx            --------   创建原材料采购订单
+PurchaseList.aspx           --------   原材料采购订单列表
+MaterialsList.aspx          --------   编辑原材料订单信息
+MaterialInspectionDatalist.aspx ----   原材料订单详细信息
+SupplierQualityReport.aspx  --------   生成供应商质量报告
+MaintainMaterial.aspx       --------   物料信息维护
+MaintainSupplier.aspx       --------   供应商信息维护
+
+二、	来料不合格报告模块
+MaterialNonConformList.aspx --------   来料不合格信息
+AddMaterialNonConform.aspx  --------   创建来料不合格信息
+
+
+
+四、	纠正和预防措施模块
+CorrectPreventionList.aspx  --------   纠正与预防信息
+AddCorrectPrevention.aspx   --------   创建纠正与预防报告
+CauseAnalysis.aspx          --------   纠正和预防原因分析及处理(待工作组处理)
+
+VerificationMeasures.aspx   --------   纠正和预防措施验证(待QA工程师检查)
+CloseCorrectPrevention.aspx --------   纠正与预防措施有效性评价(关闭当前报告的流程)
+
+
+
+五、	投诉处理模块
+ComplaintList.aspx          --------   用户投诉信息
+AddComplaint.aspx           --------   创建用户投诉信息
+ComplaintQA.aspx            --------   投诉处理QA阶段

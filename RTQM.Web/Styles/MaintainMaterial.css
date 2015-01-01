@@ -1,0 +1,74 @@
+﻿/*标题*/
+.MM-title
+{
+    height: 30px;line-height: 30px;font-weight: bold;font-size:14px
+}
+/*内容主体*/
+.MM-main {
+    margin: 0px auto;
+    width:720px;height: 450px;
+}
+/*搜索区*/
+.MM-menu 
+{
+    margin: 10px auto 10px auto;
+    width:100%;height: 30px;
+}
+/*搜索区搜索项目*/
+.MM-menuItem 
+{
+    float: left;
+    width: 200px;height: 30px;line-height: 30px;font-size: 12px;
+}
+/*物料input*/
+.MM-MaterialNo{ width: 100px;}
+
+/*搜索按钮DIV*/
+.MM-select {
+    float: left;margin-top: 3px;display: inline;
+    width: 80px;height: 30px;
+}
+.MM-select input{width:38px;height:24px;}
+/*列表外部div*/
+.MM-view {
+    width:100%;height: 390px; 
+}
+/*列表table*/
+.mm-viewTable-holder{width:100%;height: 280px; overflow-y:scroll;overflow-x:hidden;}
+.MM-viewTable {
+    width: 100%;
+     text-align:center;
+}
+/*列表标题*/
+.MM-viewTable th {
+    height: 25px;text-align: center; background: #099;font-size: 12px
+}
+.MM-viewTable td{ height: 25px;}
+/*内容列*/
+.MM-viewitem1 {width:232px}
+.MM-viewitem2 {width:286px}
+.MM-viewitem3 {width:180px}
+
+.MM-viewitem3 span {
+    color: blue; cursor: pointer
+}
+/*列表中的编辑input*/
+.MM-viewTableInput{width: 95%}
+/*设置菜单关闭，当页面处于大菜单中，菜单打开*/
+#TP-menuItemArea3
+{
+    display:block
+}
+/*设置当前页对应的菜单的样式*/
+#MaintainMaterial {
+    color: #099;
+}
+.th-title-no,.th-title-text,.th-title-op{color:White;background: #099;height:25px; line-height:25px; text-align:center;}
+.th-title-no{width:232px;margin-right:2px;+width:237px}
+.th-title-text{width:286px;margin-right:2px;+width:294px;}
+.th-title-op{width:180px;}
+.op-h-no{width:242px;}
+.op-holder{margin-top:15px;}
+.op-h-text,.op-h-op{color: blue; cursor: pointer}
+.op-h-text{width:286px;}
+.op-h-op{width:170px;}

@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 269
+/svn/ProjectFiles/!svn/ver/6726/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys
+END
+lg_Users.PK_Users.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 296
+/svn/ProjectFiles/!svn/ver/6221/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_Users.PK_Users.pkey.sql
+END
+lg_SupplierInfos.UK_SupplierInfos_SupplierName.ukey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 325
+/svn/ProjectFiles/!svn/ver/6002/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_SupplierInfos.UK_SupplierInfos_SupplierName.ukey.sql
+END
+lg_Files.UK_Files_StorageFileName.ukey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 312
+/svn/ProjectFiles/!svn/ver/6199/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_Files.UK_Files_StorageFileName.ukey.sql
+END
+lg_PurchaseOrderItems.FK_PurchaseOrderItems_MaterialId_MaterialInfos.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 347
+/svn/ProjectFiles/!svn/ver/5152/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_PurchaseOrderItems.FK_PurchaseOrderItems_MaterialId_MaterialInfos.fkey.sql
+END
+lg_Roles.UK_Roles_RoleName.ukey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 305
+/svn/ProjectFiles/!svn/ver/6230/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_Roles.UK_Roles_RoleName.ukey.sql
+END
+lg_SupplierInfos.PK_SupplierInfos.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 312
+/svn/ProjectFiles/!svn/ver/5152/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_SupplierInfos.PK_SupplierInfos.pkey.sql
+END
+lg_UserRoles.PK_UserRoles.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 304
+/svn/ProjectFiles/!svn/ver/6230/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_UserRoles.PK_UserRoles.pkey.sql
+END
+lg_Roles.PK_Roles.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 296
+/svn/ProjectFiles/!svn/ver/6230/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_Roles.PK_Roles.pkey.sql
+END
+lg_DefectDesInfos.PK_DefectDesInfos.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 314
+/svn/ProjectFiles/!svn/ver/5152/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_DefectDesInfos.PK_DefectDesInfos.pkey.sql
+END
+lg_DisqualificationReports.FK_DisqualificationReports_OrderLineId.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 344
+/svn/ProjectFiles/!svn/ver/6726/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_DisqualificationReports.FK_DisqualificationReports_OrderLineId.fkey.sql
+END
+lg_Users.UK_Users_UserName.ukey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 305
+/svn/ProjectFiles/!svn/ver/6221/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_Users.UK_Users_UserName.ukey.sql
+END
+lg_PurchaseOrderItems.FK_PurchaseOrderItems_SupplierId_SupplierInfos.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 347
+/svn/ProjectFiles/!svn/ver/5152/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_PurchaseOrderItems.FK_PurchaseOrderItems_SupplierId_SupplierInfos.fkey.sql
+END
+lg_MaterialInfos.UK_MaterialInfos_MaterialNo.ukey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 323
+/svn/ProjectFiles/!svn/ver/6002/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_MaterialInfos.UK_MaterialInfos_MaterialNo.ukey.sql
+END
+lg_Files.PK_Files_Id.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 299
+/svn/ProjectFiles/!svn/ver/6199/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_Files.PK_Files_Id.pkey.sql
+END
+lg_PurchaseOrderItems.FK_PurchaseOrderItems_POId_PurchaseOrders.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 342
+/svn/ProjectFiles/!svn/ver/6726/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_PurchaseOrderItems.FK_PurchaseOrderItems_POId_PurchaseOrders.fkey.sql
+END
+lg_PurchaseOrderItems.PK_PurchaseOrderItems.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 322
+/svn/ProjectFiles/!svn/ver/5152/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_PurchaseOrderItems.PK_PurchaseOrderItems.pkey.sql
+END
+lg_UserRoles.FK_UserRoles_RoleId.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 311
+/svn/ProjectFiles/!svn/ver/6230/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_UserRoles.FK_UserRoles_RoleId.fkey.sql
+END
+lg_PurchaseOrders.PK_PurchaseOrders.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 314
+/svn/ProjectFiles/!svn/ver/5152/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_PurchaseOrders.PK_PurchaseOrders.pkey.sql
+END
+lg_PurchaseOrders.UK_PurchaseOrders_PONo.ukey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 319
+/svn/ProjectFiles/!svn/ver/5152/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_PurchaseOrders.UK_PurchaseOrders_PONo.ukey.sql
+END
+lg_PurchaseOrderItems.UK_PurchaseOrderItems_BatchNo.ukey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 330
+/svn/ProjectFiles/!svn/ver/5152/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_PurchaseOrderItems.UK_PurchaseOrderItems_BatchNo.ukey.sql
+END
+lg_MaterialInfos.PK_MaterialInfos.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 312
+/svn/ProjectFiles/!svn/ver/5152/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_MaterialInfos.PK_MaterialInfos.pkey.sql
+END
+lg_DisqualificationReports.PK_DisqualificationReports_Id.pkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 335
+/svn/ProjectFiles/!svn/ver/6158/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_DisqualificationReports.PK_DisqualificationReports_Id.pkey.sql
+END
+lg_UserRoles.FK_UserRoles_UserId.fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 311
+/svn/ProjectFiles/!svn/ver/6230/SW_CST-2011-010-%E5%A4%96%E9%83%A8%E5%8D%8F%E5%8A%A9-%E5%AE%9E%E6%97%B6%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/04-%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81/RTQM/RTQM_DB/Schema%20Objects/Schemas/dbo/Tables/Keys/lg_UserRoles.FK_UserRoles_UserId.fkey.sql
+END

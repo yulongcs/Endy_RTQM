@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7BBF2140-09A0-40E4-9ECC-EC8D696CC6D6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebEzi.Service.WCF</RootNamespace>
+    <AssemblyName>WebEzi.Service.WCF</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\SoapExceptionType.cs" />
+    <Compile Include="Base\SoapNamespace.cs" />
+    <Compile Include="Client\BaseClientInterpector.cs" />
+    <Compile Include="Client\IClientHandleFactory.cs" />
+    <Compile Include="Client\IClientInterpector.cs" />
+    <Compile Include="Client\SoapUIDD.cs" />
+    <Compile Include="Contracts\CurrentLogin.cs" />
+    <Compile Include="Contracts\ICurrentLogin.cs" />
+    <Compile Include="Contracts\ISoapHeader.cs" />
+    <Compile Include="Contracts\ISoapMessage.cs" />
+    <Compile Include="Contracts\SoapHeader.cs" />
+    <Compile Include="Contracts\SoapMessage.cs" />
+    <Compile Include="Exception\GlobalFaultHandler.cs" />
+    <Compile Include="Exception\GlobalFaultHandlerBehaviourAttribute.cs" />
+    <Compile Include="Exception\WebEziSoapClientException.cs" />
+    <Compile Include="Exception\WebEziSoapException.cs" />
+    <Compile Include="Exception\WebEziSoapInterruptException.cs" />
+    <Compile Include="Exception\WebEziSoapServerException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Server\BaseWebService.cs" />
+    <Compile Include="Server\IBaseWebService.cs" />
+    <Compile Include="Server\IServiceLogin.cs" />
+    <Compile Include="Server\SoapUIDD.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Base\WebEzi.Base\WebEzi.Base.csproj">
+      <Project>{EDDFC862-FAD5-4179-9EA5-F697555672F0}</Project>
+      <Name>WebEzi.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\WebEzi.Core\WebEzi.Core.csproj">
+      <Project>{2A543040-BA45-4D2D-94DD-A9C667E75254}</Project>
+      <Name>WebEzi.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Util\WebEzi.Util\WebEzi.Util.csproj">
+      <Project>{F27F5956-0053-41BD-B697-21510913FF34}</Project>
+      <Name>WebEzi.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

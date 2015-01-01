@@ -1,0 +1,51 @@
+﻿<%-- ResourceManager --%>
+<ext:ResourceManager runat="server" Theme="Gray" />
+
+<%--TextFied --%>
+<webezi:TextField runat="server"  LabelSeparator="<span class='cr'>*</span>:" AllowBlank="false" SkinID="Required" />
+
+<%--MoneyTextField --%>
+<webezi:MoneyTextField runat="server"  LabelSeparator="<span class='cr'>*</span>:" AllowBlank="false" SkinID="Required" />
+
+<%--CheckboxGroup --%>
+<webezi:CheckboxGroup runat="server" LabelSeparator="<span class='cr'>*</span>:" AllowBlank="false" SkinID="Required" />
+              
+<%--NumberField --%>
+<webezi:NumberField runat="server"  LabelSeparator="<span class='cr'>*</span>:" AllowBlank="false" SkinID="Required" />
+
+<%--ComboBox --%>
+<webezi:ComboBox runat="server"  Mode="Local" LabelSeparator="<span class='cr'>*</span>:" AllowBlank="false" SkinID="Required" />
+
+<%--DateField --%>
+<webezi:DateField runat="server"   InvalidText="{0} is not a valid date - it must be in the format dd/mm/yyyy"/>
+<webezi:DateField runat="server"  LabelSeparator="<span class='cr'>*</span>:" AllowBlank="false" SkinID="Required" InvalidText="{0} is not a valid date - it must be in the format dd/mm/yyyy"/>
+
+
+<%--FileUploadField --%>
+<webezi:FileUploadField runat="server"  LabelSeparator="<span class='cr'>*</span>:" AllowBlank="false" SkinID="Required" />
+
+
+<%--GridPanel --%>
+<webezi:GridPanel  runat="server" Layout="Fit" >
+    <BottomBar>
+        <webezi:PagingToolbar  runat="server" PageSize="20" HideRefresh="true"/>
+    </BottomBar>
+    <View>
+        <webezi:GridView runat="server" EmptyText="No data found"/>
+    </View>
+</webezi:GridPanel>
+
+<%--Panel --%>
+<webezi:Panel runat="server" BodyCls="PanelBody"/>
+
+<webezi:Button runat="server">
+    <DirectEvents>
+        <Click>
+            <EventMask ShowMask="True"></EventMask>
+        </Click>
+    </DirectEvents>
+</webezi:Button>
+
+<%--Window --%>
+<webezi:Window runat="server" Icon="Application" BodyStyle="background-color: #fff;" 
+            BodyPadding="10" HideMode="Display" Modal="True"/> 

@@ -1,0 +1,4 @@
+﻿.x-grid3-row td, .x-grid3-summary-row td {
+    -moz-user-select:text;
+    -webkit-user-select:text;
+}

@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="DemoWebApp.Master.Site" EnableViewState="true"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <ext:ResourceManager runat="server" DisableViewState="False" AjaxViewStateMode="Enabled">
+    </ext:ResourceManager>
+    <div class="Site_Page">
+        <!--Header-->
+        <div class="Site_Header clearleft">
+        </div>
+        <!--Menu-->
+        <div class="Site_Menu clearleft">
+            <webezi:Toolbar ID="tlbMenus" runat="server" SkinID="SiteMenu">
+                <Items>
+                    <webezi:Button ID="btnHomeMenu" runat="server" Text="Home"  Href="/ASPX/Home.aspx" 
+                        Icon="UserHome" HrefTarget="_self" />
+                    <webezi:Button ID="btnGeneralMenu" runat="server" Text="General" Icon="DatabaseTable">
+                        <Menu>
+                            <webezi:Menu runat="server">
+                                <Items>
+                                    <webezi:MenuItem runat="server" Text="Department" OnClick="Department_Click" AutoPostBack="true" />
+                                    <webezi:MenuItem runat="server" Text="User" OnClick="User_Click" AutoPostBack="true" />
+                                </Items>
+                            </webezi:Menu>
+                        </Menu>
+                    </webezi:Button>
+                    <webezi:Button ID="btnLogoutMenu" runat="server" Text="Logout" OnDirectClick="Logout_Click" 
+                        Icon="UserCross">
+                        <DirectEvents>
+                            <Click>
+                                <Confirmation ConfirmRequest="true" Message="Are you sure to logout?" />
+                            </Click>
+                        </DirectEvents>
+                    </webezi:Button>
+                </Items>
+            </webezi:Toolbar>
+        </div>
+        <!--Navigator bar-->
+        <div class="Site_NavigatorBar clearleft">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder_Title" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!--Main-->
+        <div class="Site_Main clearleft">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder_Body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!--Footer-->
+        <div class="Site_Footer clearleft">
+        </div>
+    </div>
+    </form>
+</body>
+</html>

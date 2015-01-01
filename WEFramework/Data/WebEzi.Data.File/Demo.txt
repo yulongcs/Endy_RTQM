@@ -1,0 +1,141 @@
+﻿
+        #region 
+        /*
+    public enum StoragePartitionMode
+    {
+        Default,
+        Friendly,
+        //config storage files path only one
+        Configuration
+    }
+        #region Static
+        static readonly Dictionary<StoragePartitionMode, string> StoragePartition = InitStoragePartition();
+
+        /// <summary>
+        /// storage partitions requires persistence 
+        /// From "configuration", "XML" or "DB" read the initial setup information
+        /// </summary>
+        /// <returns></returns>
+        static Dictionary<StoragePartitionMode, string> InitStoragePartition()
+        {
+            Dictionary<StoragePartitionMode, string> storageDictionary = new System.Collections.Generic.Dictionary<StoragePartitionMode, string>();
+
+            //string strFriendlyName = AppDomain.CurrentDomain.FriendlyName;
+            string AssemblyPathDefault = AppDomain.CurrentDomain.BaseDirectory;
+            string AssemblyPathFriendly = System.Configuration.ConfigurationManager.AppSettings["configstoragepathfriendly"];
+            string AssemblyPathConfig = System.Configuration.ConfigurationManager.AppSettings["configstoragepath"];
+
+            AssemblyPathDefault = string.Format("{0}filestorage\\", AssemblyPathDefault);
+            //AssemblyPathFriendly = string.Format(AssemblyPathFriendly, strFriendlyName);
+            //AssemblyPathConfig = string.Format(AssemblyPathConfig, strFriendlyName);
+
+            storageDictionary.Add(StoragePartitionMode.Default, AssemblyPathDefault);
+
+            if (!string.IsNullOrEmpty(AssemblyPathFriendly))
+            {
+                AssemblyPathFriendly = DictionaryFormat(AssemblyPathFriendly);
+                if (!storageDictionary.ContainsValue(AssemblyPathFriendly))
+                    storageDictionary.Add(StoragePartitionMode.Friendly, AssemblyPathFriendly);
+            }
+            if (!string.IsNullOrEmpty(AssemblyPathConfig))
+            {
+                AssemblyPathConfig = DictionaryFormat(AssemblyPathConfig);
+                if (!storageDictionary.ContainsValue(AssemblyPathConfig))
+                    storageDictionary.Add(StoragePartitionMode.Configuration, DictionaryFormat(AssemblyPathConfig));
+            }
+
+            return storageDictionary;
+        }
+
+        static string DictionaryFormat(string DictoryPath)
+        {
+            DictoryPath = DictoryPath.Replace('/', '\\');
+            if (!DictoryPath.EndsWith("\\"))
+            {
+                DictoryPath += "\\";
+            }
+            return DictoryPath;
+        }
+
+        #endregion Static
+
+        private StoragePartitionMode _storageSpecifiedPartitionMode;
+        private string _storageSpecifiedPartitionValue;
+        /// <summary>
+        /// Storage Partition Mode
+        /// </summary>
+        public StoragePartitionMode StoragePartitionMode
+        {
+            get { return _storageSpecifiedPartitionMode; }
+            set
+            {
+                StoragePartition.TryGetValue(value, out this._storageSpecifiedPartitionValue);
+
+                if (!string.IsNullOrEmpty(_storageSpecifiedPartitionValue))
+                {
+                    _storageSpecifiedPartitionMode = value;
+                }
+                else
+                {
+                    StoragePartition.TryGetValue(StoragePartitionMode.Default, out _storageSpecifiedPartitionValue);
+                    _storageSpecifiedPartitionMode = StoragePartitionMode.Default;
+                    _storageSpecifiedPartitionValue = "";
+                }
+            }
+        }
+         * 
+         * */
+        #endregion 
+
+
+
+            WebEzi.Base.DefinedData.WEFile formerFile = new WebEzi.Base.DefinedData.WEFile("TempFiles", "abc.txt");//TempFiles
+            WebEzi.Data.File.WEFileStorage file = new WebEzi.Data.File.WEFileStorage();
+            file.FormerFile = formerFile;
+
+        
+            file.SetStorageDriver(WebEzi.Data.File.StoragePartitionMode.Friendly,string.Format("{0}\\abc\\",DateTime.Now.ToString("BIyyyyMM")));
+
+            file.DisableAutoDirectory();
+            try
+            {
+                file.Save();
+                if (file.LastState)
+                {
+                    //Generate file index 
+                }
+                else
+                {
+                    labInfo.Text = file.LastMessage;
+                }
+            }
+            catch (WebEzi.Base.Exception.FileIOException ex)
+            {
+                Console.Write(ex);
+            }
+            /*
+            System.Threading.Thread.Sleep(1000);
+            file.SetStorageDriver(WebEzi.Data.File.StoragePartitionMode.Configuration, DateTime.Now.ToString("BIyyyyMM"));
+            file.EnableAutoDirectory();
+            file.Save();
+            System.Threading.Thread.Sleep(1000);
+            file.SetStorageDriver(WebEzi.Data.File.StoragePartitionMode.Default, DateTime.Now.ToString("yyyy-MM"));
+            file.Save();
+            */
+            file.EnableAutoDirectory();
+            file.FormerFile = new WebEzi.Base.DefinedData.WEFile("TempFiles", "abc.txt");
+            file = new WebEzi.Data.File.WEFileStorage(string.Format("{0}.{1}", DateTime.Now.ToString("yyyyMMddHHmm"), formerFile.Extension), formerFile);
+            try
+            {
+                file.Save(false);
+                file.SetStorageFileName(string.Format("abc{0}.txt",DateTime.Now.ToString("yyyyMMddHHmm")));
+                file.Save(true);
+                file.Save();
+            }
+            catch (WebEzi.Base.Exception.FileIOException ex)
+            {
+                Console.Write(ex);
+            }
+
+            file.ResponseFile();
+            return;

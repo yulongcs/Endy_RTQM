@@ -1,0 +1,29 @@
+﻿/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h3,h4,h5,h6,pre,form,fieldset,input,
+textarea,p,blockquote,th,td { margin:0;padding: 0; }
+fieldset,img { border:0 }
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal;
+font-weight:normal; }
+ol,ul { list-style:none }
+caption,th { text-align:left }
+h1,h2,h3,h4,h5,h6 { font-size:100%;font-weight:normal;}
+q:before,q:after { content:'' }
+abbr,acronym { border:0 }
+
+.bc{margin-left:auto;margin-right:auto;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}.clearfix{display:inline-block;}* html .clearfix{height:1%;}.clearfix{display:block;}
+.tc{text-align:center;}
+.fl{float:left;display:inline;}
+.fr{float:right;display:inline;}
+
+.f12{ font-size: 12px;}
+.f14{ font-size: 14px;}
+.f15{ font-size: 15px;}
+.f16{ font-size: 16px;}
+.f18{ font-size: 18px;}
+.f20{ font-size: 20px;}
+.f24{ font-size: 24px;}
+.f27{ font-size: 27px;}
+
+.dn{ display: none;}
+.db{ display: block;}

@@ -1,0 +1,88 @@
+﻿/*Site.Master*/
+.Site_Page,.Login_Page
+{
+    width: 1235px;margin: 0px auto;
+}
+
+.Site_Header,.Login_Header
+{
+   /*height: 110px;background: url(Images/top.jpg) no-repeat;*/
+   height: 50px;background: url(Images/top.jpg) no-repeat;
+}
+
+.Site_Header_text
+{
+    color: #FFF;height: 30px;font-size: 14px;
+    float: right;margin: 20px;
+}
+
+.Site_Menu
+{
+  background: #F0F0F0;
+}
+
+/*Navigator bar*/
+.Site_NavigatorBar
+{
+    padding: 10px 10px 0px 10px;border-bottom: 1px #f4f4f4 solid;
+}
+
+.Site_NavigatorBar ul
+{
+    color:#4c626c; overflow:auto;  list-style:none outside none;border-bottom:2px solid #f88421;
+    margin: 0px;padding: 0px;display:inline-block; *display:inline; zoom:1;
+}
+
+.Site_NavigatorBar li {
+    color:#b5b5b5; float:left; padding:0px 5px 5px 0px;  
+}
+
+.Site_NavigatorBar li .x-label-value
+{
+    vertical-align:top;
+}
+
+.Site_NavigatorBar a,.Site_NavigatorBar .MenuTitle {
+    text-decoration: none;color: #27aee8;padding-right: 10px
+}
+
+.Site_NavigatorBar a:hover
+{
+    text-decoration: underline;color: #27aee8;padding-right: 10px
+}
+
+.Site_Main
+{
+    min-height: 520px;height: 100%;_height: 520px;background:#f9fafa;
+    padding: 10px;
+}
+
+
+ .Site_Footer,.Login_Footer
+ {
+     /*height: 83px; background: url(Images/footer.jpg) no-repeat;*/
+ }
+ 
+ /*Login*/
+.Login_Main
+{
+    width: 381px;height: 216px; background:url(Images/login_bg.jpg) no-repeat;border: none;
+    margin: 190px auto;   
+}
+.Login_Main_title
+{
+    font-family: Times New Roman;font-size: 24px;
+    float: left;margin: 20px 0px 0px 20px;
+}
+
+.Login_Main_item 
+{
+    position: relative;  width: 250px;height: 30px;
+    margin: 15px auto; 
+}
+
+.Login_Main_button
+{
+    width: 106px;height: 30px;
+    margin: 15px auto;
+}

@@ -1,0 +1,21 @@
+K 10
+svn:ignore
+V 410
+AspNetPager.dll
+EntityFramework.dll
+EntityFramework.xml
+Microsoft.Practices.ServiceLocation.dll
+Microsoft.Practices.ServiceLocation.pdb
+Microsoft.Practices.ServiceLocation.xml
+Microsoft.Practices.Unity.Configuration.dll
+Microsoft.Practices.Unity.Configuration.xml
+Microsoft.Practices.Unity.dll
+Microsoft.Practices.Unity.xml
+RTQM.Biz.dll
+RTQM.Biz.pdb
+RTQM.Utility.dll
+RTQM.Utility.pdb
+RTQM.Web.dll
+RTQM.Web.pdb
+
+END

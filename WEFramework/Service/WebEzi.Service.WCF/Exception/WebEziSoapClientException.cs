@@ -1,0 +1,18 @@
+﻿using System;
+
+using System.ServiceModel;
+using WebEzi.Service.WCF.Contracts;
+
+namespace WebEzi.Service.WCF.Exception
+{
+    public class WebEziSoapClientException : WebEziSoapException
+    {
+        public SoapExceptionType ExceptionType { get; set; }
+
+        public WebEziSoapClientException(string message, SoapExceptionType exceptiontype) : base(message) { ExceptionType = exceptiontype; }
+
+        public WebEziSoapClientException(string message) : base(message) { }
+        public WebEziSoapClientException(string message, System.Exception inner) : base(message, inner) { }
+    }
+}
+

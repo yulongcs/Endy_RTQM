@@ -1,0 +1,37 @@
+﻿.title-holder{}
+.title-holder h2{padding:10px 10px 10px 20px;font-weight:bold;}
+.list-holder{width:1080px;}
+.add-link{margin:10px 55px 0 0px; cursor:pointer;}
+#l-h-header{width:100%;color:White}
+#l-h-header .l-h-h-name,.l-h-h-ad,.l-h-h-rName,
+.l-h-h-department,.l-h-h-email,.l-h-h-createDate,.l-h-h-op,.l-h-h-bgLine{height:25px;line-height:25px; text-align:center; background:#099}
+#l-h-header .l-h-h-name{width:160px;}
+#l-h-header .l-h-h-ad{width:120px;}
+#l-h-header .l-h-h-rName{width:98px;}
+#l-h-header .l-h-h-department{width:127px;}
+#l-h-header .l-h-h-email{width:200px;}
+#l-h-header .l-h-h-createDate{width:160px;}
+#l-h-header .l-h-h-op{width:183px;}
+#l-h-header .l-h-h-bgLine{width:2px; background:none;}
+
+#l-h-list{width:100%; text-align:center;}
+#l-h-list .l-h-l-item{height:24px;line-height:25px;text-align:center;border-bottom:1px dashed #666;}
+.l-h-l-i-name,.l-h-l-i-ad,.l-h-l-i-rName,.l-h-l-i-department,.l-h-l-i-email,.l-h-l-i-createDate{padding-right:2px;height:24px; overflow:hidden;}
+.l-h-l-i-name{width:160px;}
+.l-h-l-i-ad{width:120px;}
+.l-h-l-i-rName{width:98px;}
+.l-h-l-i-department{width:127px;}
+.l-h-l-i-email{width:200px;}
+.l-h-l-i-createDate{width:160px;}
+.l-h-l-i-op{width:180px;}
+.l-h-l-i-op a{text-decoration:none;color:Blue;cursor:pointer;}
+.link-del{margin:0 4px; }
+
+#TP-menuItemArea3
+{
+    display:block
+}
+/*设置当前页对应的菜单的样式*/
+#UserManage {
+    color: #099;
+}

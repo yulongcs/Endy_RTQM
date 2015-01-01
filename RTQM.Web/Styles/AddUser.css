@@ -1,0 +1,11 @@
+﻿.addUser-holder,.cp-holder{width:382px;border: solid 4px #CCC;padding:15px 0 0 30px}
+.addUser-holder{height:357px;}
+.cp-holder{height:257px;}
+.addUser-holder h2,.cp-holder h2{font-weight:bold;}
+.au-h-name,.au-h-pw,.au-h-roll,.au-h-ad,.au-h-rName,.au-h-department,.au-h-email{line-height:24px;margin-bottom:15px;}
+.au-h-name{margin-top:15px;}
+.addUser-holder label,.cp-holder label{width:60px; text-align:right;}
+.addUser-holder input,select{margin-left:15px;}
+.cp-holder input,select{margin-left:15px;}
+.au-h-submit{margin-left:60px;}
+#add-btn{width:50px;height:24px;}

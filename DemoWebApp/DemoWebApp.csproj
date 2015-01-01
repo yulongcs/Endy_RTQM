@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C84AD745-E604-4C46-9F32-2152F4ACF1B3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DemoWebApp</RootNamespace>
+    <AssemblyName>DemoWebApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ext.Net, Version=2.3.0.0, Culture=neutral, PublicKeyToken=2e12ce3d0176cd87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Ext.Net\Ext.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Ext.Net.Utilities, Version=2.3.0.0, Culture=neutral, PublicKeyToken=2c34ac34702a3c23, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Ext.Net\Ext.Net.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Default\Control.css" />
+    <Content Include="App_Themes\Default\Images\footer.jpg" />
+    <Content Include="App_Themes\Default\Images\login_bg.jpg" />
+    <Content Include="App_Themes\Default\Images\top.jpg" />
+    <Content Include="App_Themes\Default\Page.css" />
+    <Content Include="App_Themes\Default\Style.css" />
+    <Content Include="ASPX\Examples\GaugeChart.aspx" />
+    <Content Include="ASPX\Examples\ImageUploadPage.aspx" />
+    <Content Include="ASPX\Examples\OrderPanel.aspx" />
+    <Content Include="ASPX\Examples\TreePanel.aspx" />
+    <Content Include="ASPX\Examples\TreePanelControl.aspx" />
+    <Content Include="ASPX\Examples\TreePanelView.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\BaseUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\CurrentLogin.cs" />
+    <Compile Include="App_Code\SiteMapping.cs" />
+    <Compile Include="ASPX\Examples\ChartData.cs" />
+    <Compile Include="ASPX\Examples\GaugeChart.aspx.cs">
+      <DependentUpon>GaugeChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ASPX\Examples\GaugeChart.aspx.designer.cs">
+      <DependentUpon>GaugeChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ASPX\Examples\ImageUploadPage.aspx.cs">
+      <DependentUpon>ImageUploadPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ASPX\Examples\ImageUploadPage.aspx.designer.cs">
+      <DependentUpon>ImageUploadPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ASPX\Examples\OrderPanel.aspx.cs">
+      <DependentUpon>OrderPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ASPX\Examples\OrderPanel.aspx.designer.cs">
+      <DependentUpon>OrderPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ASPX\Examples\TreePanel.aspx.cs">
+      <DependentUpon>TreePanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ASPX\Examples\TreePanel.aspx.designer.cs">
+      <DependentUpon>TreePanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ASPX\Examples\TreePanelControl.aspx.cs">
+      <DependentUpon>TreePanelControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ASPX\Examples\TreePanelControl.aspx.designer.cs">
+      <DependentUpon>TreePanelControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ASPX\Examples\TreePanelView.aspx.cs">
+      <DependentUpon>TreePanelView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ASPX\Examples\TreePanelView.aspx.designer.cs">
+      <DependentUpon>TreePanelView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\BaseMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ASCX\" />
+    <Folder Include="Files\Template\" />
+    <Folder Include="Files\Temp\" />
+    <Folder Include="WebService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master\Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DemoQuery\DemoQuery.csproj">
+      <Project>{3E951409-1160-4F01-A3EF-ABFD27187A2D}</Project>
+      <Name>DemoQuery</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEFramework\Base\WebEzi.Base\WebEzi.Base.csproj">
+      <Project>{EDDFC862-FAD5-4179-9EA5-F697555672F0}</Project>
+      <Name>WebEzi.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEFramework\Web\WebEzi.Control.ExtNet\WebEzi.Control.ExtNet.csproj">
+      <Project>{276AE6AC-0D8E-42C9-B776-D65204193F56}</Project>
+      <Name>WebEzi.Control.ExtNet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEFramework\Core\WebEzi.Core\WebEzi.Core.csproj">
+      <Project>{2A543040-BA45-4D2D-94DD-A9C667E75254}</Project>
+      <Name>WebEzi.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEFramework\Data\Webezi.Data\Webezi.Data.Linq.csproj">
+      <Project>{B982959C-B585-48F3-BD32-256E208567F1}</Project>
+      <Name>Webezi.Data.Linq</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEFramework\Web\WebEzi.Web.ExtNet\WebEzi.Web.ExtNet.csproj">
+      <Project>{5E1C94D1-F0C3-4AA3-972D-3868803ECD75}</Project>
+      <Name>WebEzi.Web.ExtNet</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Default\Control.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>15529</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

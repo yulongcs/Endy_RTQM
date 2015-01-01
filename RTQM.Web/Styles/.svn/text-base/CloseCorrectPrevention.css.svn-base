@@ -1,0 +1,41 @@
+﻿.CCP-title
+{
+    height: 30px;line-height: 30px;font-size: 12px;
+    margin-top: 10px; display: inline
+}
+.CCP-main 
+{
+    width:320px; height:auto !important;height:190px;min-height:190px; overflow:hidden; _overflow:visible;border: solid 1px #60bfbf;
+    margin: 50px auto;
+}
+.CCP-mainItem
+{
+    width: 300px;height: 30px;font-size: 12px;
+    float: left; margin: 10px auto auto 30px;display: inline;
+}
+.CCP-ItemTitle {
+    width: 100%;height: 30px;line-height: 30px;font-size: 12px;
+    float: left; margin: 10px auto auto 30px; display:inline
+}
+.CCP-ItemText {
+    width: 250px;height: 60px;
+    float: left; margin-left: 30px; display: inline;
+}
+.CCP-TextArea {
+    width: 250px;min-width: 250px; max-width: 250px;height: 50px;min-height: 50px; max-height: 50px;font-size: 12px;
+}
+.CCP-mainBts {
+    width: 200px;height: 30px;
+    float: left; margin:10px auto auto 60px;display: inline;
+}
+.CCP-mainBtY 
+{
+    float: left;
+    width: 56px;height: 30px;
+}
+.CCP-mainBtN 
+{
+    float:right;
+    width: 56px;height: 30px;
+}
+.CCP-displayDiv{ display:none;}

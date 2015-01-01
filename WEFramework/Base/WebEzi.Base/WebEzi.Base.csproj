@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EDDFC862-FAD5-4179-9EA5-F697555672F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebEzi.Base</RootNamespace>
+    <AssemblyName>WebEzi.Base</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Const\ConstFactory.cs" />
+    <Compile Include="Const\ConstAttribute.cs" />
+    <Compile Include="DefinedData\WEAttachment.cs" />
+    <Compile Include="DefinedData\WEDateTime.cs" />
+    <Compile Include="DefinedData\WEFile.cs" />
+    <Compile Include="DefinedData\WEFloat.cs" />
+    <Compile Include="DefinedData\WEInteger.cs" />
+    <Compile Include="DefinedData\WEKey.cs" />
+    <Compile Include="DefinedData\WEList.cs" />
+    <Compile Include="DefinedData\WEListItem.cs" />
+    <Compile Include="DefinedData\WEMoney.cs" />
+    <Compile Include="DefinedData\WEPercent.cs" />
+    <Compile Include="DefinedData\WEReadOnlyCollection.cs" />
+    <Compile Include="Exception\BaseException.cs" />
+    <Compile Include="Exception\ControlException.cs" />
+    <Compile Include="Exception\BusinessException.cs" />
+    <Compile Include="Exception\DatabaseException.cs" />
+    <Compile Include="Exception\DefinedDataException.cs" />
+    <Compile Include="Exception\EmailException.cs" />
+    <Compile Include="Exception\FileIOException.cs" />
+    <Compile Include="Exception\NoneCurrentLoginException.cs" />
+    <Compile Include="Exception\PageParameterException.cs" />
+    <Compile Include="Extra\ExtraEnum.cs" />
+    <Compile Include="Extra\ExtraList.cs" />
+    <Compile Include="Extra\ExtraString.cs" />
+    <Compile Include="ICurrentLogin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

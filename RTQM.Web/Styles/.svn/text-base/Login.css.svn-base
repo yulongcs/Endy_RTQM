@@ -1,0 +1,24 @@
+﻿body{ font: normal 12px/1.5 'Tahoma', 'simsun';color:#333}
+.f12{ font-family: 'Tahoma', 'simsun';}
+.f14,.f15,.f16,.f18,.f20,.f24,.f27{font-family:"Microsoft Yahei","微软雅黑",Tahoma,Arial,Helvetica,STHeiti; }
+.logo-holder{padding:0 64px; background:whiteSmoke;height:71px; border-bottom:1px solid #E5E5E5}
+.logo-holder h1{line-height:70px;}
+.main-holder{width:1000px;padding-top:23px;padding-bottom:100px;}
+.introduction-holder{width:615px}
+.introduction-holder h1{color:#DD4B39;margin-bottom:20px;}
+.i-h-text{margin-bottom:15px;letter-spacing:2px;}
+.i-h-text span{color:#15C}
+.i-h-list{padding-top:15px;}
+.i-h-list h2,.i-h-list p{margin:0 0 0 68px}
+.i-h-list li{margin-bottom:28px;}
+.login-holder{width:310px;height:275px;padding:15px 0 0 25px;border:1px solid #E5E5E5; background:whiteSmoke;margin-top:30px;}
+.l-h-item{margin-top:20px;}
+.l-h-item label{display:block; font-weight:bold;}
+.l-h-item input{margin-top:5px;width:88%;height:30px;line-height:30px;padding-left:5px; font-size:15px;}
+.username,.password{border:1px solid #B9B9B9;border-top:1px solid #A0A0A0}
+.loginBtn{width:70px;height:32px; line-height:32px;margin-left:200px;margin-top:25px;}
+.footer-holder{height:35px;border-top:1px solid #ebebeb; position:absolute;bottom:0;width:100%;overflow:hidden;}
+.f-h-copyright{line-height:35px;width:380px;}
+.f-h-copyright li{margin-left:15px;}
+.error{border:2px solid red}
+.loginError{color:Red;padding-left:35px;}

@@ -1,0 +1,126 @@
+﻿/*标题*/
+.MID-title
+{
+     height: 30px;line-height: 30px;font-weight: bold;font-size:14px
+}
+/*内容主体*/
+.MID-main 
+{
+    width:100%;height: 450px;
+    margin: 0px auto;
+}
+/*搜索区*/
+.MID-SearchArea {
+   width:820px;  height: 90px;line-height: 30px;font-size: 12px;border: 1px solid #a0d9d8;
+    float: left;margin: 20px auto 0 auto;
+}
+/*搜索区搜索项目*/
+.MID-SearchItem {
+    width: 180px;height: 30px;font-size: 12px;
+    float: left;margin: 10px auto auto 10px; display: inline
+}
+/*搜索区input*/
+.MID-SearchInput {
+    width: 100px;
+}
+/*搜索区合格率input*/
+.MID-ConformanceInput {
+     width:30px;
+}
+/*搜索区搜索按钮DIV*/
+.MID-select {
+    width: 56px;height: 20px;
+    float:left;margin-top: 13px;display: inline
+}
+/*搜索区搜索按钮*/
+.selectBt {
+    cursor: pointer;
+}
+/*功能区*/
+.MID-OperationArea {
+     height: 30px;line-height: 30px;
+    float: left;
+}
+/*功能区文本*/
+.MID-OperaText {
+    width: 150px;font-size: 12px;
+    float: left;margin-left: 50px;display: inline
+}
+/*列表外部div*/
+.MID-view {
+    width: 100%; height: 280px;overflow: auto;
+    float: left;
+}
+/*列表table*/
+.MID-viewTable {
+    width:1520px;
+    text-align:center;
+}
+/*列表标题*/
+.MID-viewTable th {
+    height: 25px;text-align:center; background: #099;font-size: 12px;
+}
+.MID-viewTable td {
+    height: 20px;line-height: 20px; font-size: 12px;
+}
+/*列表内容列*/
+.MID-viewitem {
+    width: 100px; 
+}
+.MID-viewitem0 {
+   width: 100px; 
+}
+.MID-viewitem1 {
+    width: 50px; 
+}
+.MID-viewitem2 {
+   width: 115px; 
+}
+.MID-viewitem3 {
+   width: 115px; 
+}
+.MID-viewitem4 {
+  width: 115px;  
+}
+.MID-viewitem5 {
+  width: 115px;  
+}
+.MID-viewitem6 {
+   width: 115px; 
+}
+.MID-viewitem7 {
+   width: 115px; 
+}
+.MID-viewitem8 {
+   width: 60px; 
+}
+.MID-viewitem9 {
+  width: 115px;  
+}
+.MID-viewitem10 {
+   width: 115px; 
+}
+.MID-viewitem11 {
+   width: 115px; 
+}
+.MID-viewitem12 {
+    width: 115px; 
+}
+.MID-viewitem13 
+{
+    width: 150px;
+}
+.MID-viewitem13 span {
+    color: blue; cursor: pointer
+}
+/*列表中的编辑input*/
+.MID-viewTableInput{width: 95%}
+/*设置菜单关闭，当页面处于大菜单中，菜单打开*/
+#TP-menuItemArea1
+{
+    display:block
+}
+/*设置当前页对应的菜单的样式*/
+#MaterialInspectionDatalist{
+    color: #099;
+}

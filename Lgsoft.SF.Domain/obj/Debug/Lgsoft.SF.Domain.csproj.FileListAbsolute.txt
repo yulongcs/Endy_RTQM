@@ -1,0 +1,13 @@
+E:\项目\SW_CST-2011-010-外部协助-实时质量管理监控系统\04-项目编码\RTQM\Lgsoft.SF.Domain\bin\Debug\Lgsoft.SF.Domain.dll
+E:\项目\SW_CST-2011-010-外部协助-实时质量管理监控系统\04-项目编码\RTQM\Lgsoft.SF.Domain\bin\Debug\Lgsoft.SF.Domain.pdb
+E:\项目\SW_CST-2011-010-外部协助-实时质量管理监控系统\04-项目编码\RTQM\Lgsoft.SF.Domain\obj\Debug\ResolveAssemblyReference.cache
+E:\项目\SW_CST-2011-010-外部协助-实时质量管理监控系统\04-项目编码\RTQM\Lgsoft.SF.Domain\obj\Debug\Lgsoft.SF.Domain.dll
+E:\项目\SW_CST-2011-010-外部协助-实时质量管理监控系统\04-项目编码\RTQM\Lgsoft.SF.Domain\obj\Debug\Lgsoft.SF.Domain.pdb
+E:\项目\公司项目\SW_CST-2011-010-外部协助-实时质量管理监控系统\04-项目编码\RTQM\Lgsoft.SF.Domain\bin\Debug\Lgsoft.SF.Domain.dll
+E:\项目\公司项目\SW_CST-2011-010-外部协助-实时质量管理监控系统\04-项目编码\RTQM\Lgsoft.SF.Domain\bin\Debug\Lgsoft.SF.Domain.pdb
+E:\项目\公司项目\SW_CST-2011-010-外部协助-实时质量管理监控系统\04-项目编码\RTQM\Lgsoft.SF.Domain\obj\Debug\Lgsoft.SF.Domain.dll
+E:\项目\公司项目\SW_CST-2011-010-外部协助-实时质量管理监控系统\04-项目编码\RTQM\Lgsoft.SF.Domain\obj\Debug\Lgsoft.SF.Domain.pdb
+E:\项目\RTQM\Lgsoft.SF.Domain\bin\Debug\Lgsoft.SF.Domain.dll
+E:\项目\RTQM\Lgsoft.SF.Domain\bin\Debug\Lgsoft.SF.Domain.pdb
+E:\项目\RTQM\Lgsoft.SF.Domain\obj\Debug\Lgsoft.SF.Domain.dll
+E:\项目\RTQM\Lgsoft.SF.Domain\obj\Debug\Lgsoft.SF.Domain.pdb

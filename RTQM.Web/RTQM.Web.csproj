@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB5EA5EF-B0C1-4920-87D2-383B0BA6FE79}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lgsoft.RTQM</RootNamespace>
+    <AssemblyName>RTQM.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.3.2.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNetPager.7.3.2\lib\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.2.1.505.0\lib\NET35\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.2.1.505.0\lib\NET35\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AddComplaint.aspx" />
+    <None Include="AddCorrectPrevention.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="Images\rp.png" />
+    <Content Include="Materials\AddMaterialNonConform.aspx" />
+    <Content Include="Admin\AddUser.aspx" />
+    <Content Include="Admin\ChangePassword.aspx" />
+    <Content Include="Admin\RoleManage.aspx" />
+    <Content Include="Admin\UserManage.aspx" />
+    <None Include="AspNetPagerDocs.xml" />
+    <None Include="CauseAnalysis.aspx" />
+    <None Include="CloseCorrectPrevention.aspx" />
+    <None Include="ComplaintList.aspx" />
+    <None Include="ComplaintQA.aspx" />
+    <Content Include="Content\themes\base\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Content\themes\base\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui-1.8.17.custom.css" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.all.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.base.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Images\bh.png" />
+    <Content Include="Images\print_ico.gif" />
+    <Content Include="Materials\IncomingQualityReport.aspx" />
+    <Content Include="Images\yc.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="Materials\PrintDisqualificationReport.aspx" />
+    <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.17.js" />
+    <Content Include="Scripts\jquery.nyroModal\img\ajaxLoader.gif" />
+    <Content Include="Scripts\jquery.nyroModal\img\close.gif" />
+    <Content Include="Scripts\jquery.nyroModal\img\close.png" />
+    <Content Include="Scripts\jquery.nyroModal\img\next.gif" />
+    <Content Include="Scripts\jquery.nyroModal\img\prev.gif" />
+    <Content Include="Scripts\jquery.nyroModal\js\jquery.nyroModal-ie6.js" />
+    <Content Include="Scripts\jquery.nyroModal\js\jquery.nyroModal-ie6.min.js" />
+    <Content Include="Scripts\jquery.nyroModal\js\jquery.nyroModal.custom.js" />
+    <Content Include="Scripts\jquery.nyroModal\styles\nyroModal.css" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Script\jquery-ui-1.8.17.min.js" />
+    <Content Include="Script\ComplaintQA.js" />
+    <None Include="CorrectPreventionList.aspx" />
+    <Content Include="Images\Ascending.gif" />
+    <Content Include="Images\blue.png" />
+    <Content Include="Images\textdate-delete.png" />
+    <Content Include="Images\Descending.gif" />
+    <Content Include="Admin\MaintainMaterial.aspx" />
+    <Content Include="Admin\MaintainSupplier.aspx" />
+    <Content Include="Script\AddComplaint.js" />
+    <Content Include="Script\AddMaterialNonConform.js" />
+    <Content Include="Script\CauseAnalysis.js" />
+    <Content Include="Script\CloseCorrectPrevention.js" />
+    <Content Include="Script\ComplaintList.js" />
+    <Content Include="Script\CorrectPreventionList.js" />
+    <Content Include="Script\jquery.easing.1.3.js" />
+    <Content Include="Script\MaintainMaterial.js" />
+    <Content Include="Script\MaintainSupplier.js" />
+    <Content Include="Script\MaterialNonConformList.js" />
+    <Content Include="Script\Template.js" />
+    <Content Include="Script\VerificationMeasures.js" />
+    <Content Include="Styles\AddComplaint.css" />
+    <Content Include="Styles\AddCorrectPrevention.css" />
+    <Content Include="Styles\AddMaterialNonConform.css" />
+    <Content Include="Materials\AddPurchase.aspx" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Images\topline.jpg" />
+    <Content Include="Images\TP-leftmainBg.jpg" />
+    <Content Include="Images\TP-menuline.jpg" />
+    <Content Include="Materials\MaterialInspectionDatalist.aspx" />
+    <Content Include="Materials\MaterialNonConformList.aspx" />
+    <Content Include="Materials\MaterialsList.aspx" />
+    <Content Include="Materials\PurchaseList.aspx" />
+    <Content Include="Script\AddPurchase.js" />
+    <Content Include="Script\jquery-1.6.2.min.js" />
+    <Content Include="Script\jquery.datePicker-min.js" />
+    <Content Include="Script\MaterialInspectionDatalist.js" />
+    <Content Include="Script\MaterialsList.js" />
+    <Content Include="Script\PurchaseList.js" />
+    <Content Include="Script\SupplierQualityReport.js" />
+    <Content Include="Styles\AddPurchase.css" />
+    <Content Include="Styles\AddUser.css" />
+    <Content Include="Styles\AspNetPager.css" />
+    <Content Include="Styles\base.css" />
+    <Content Include="Styles\CauseAnalysis.css" />
+    <Content Include="Styles\ChangePassword.css" />
+    <Content Include="Styles\CloseCorrectPrevention.css" />
+    <Content Include="Styles\ComplaintList.css" />
+    <Content Include="Styles\ComplaintQA.css" />
+    <Content Include="Styles\CorrectPreventionList.css" />
+    <Content Include="Styles\Login.css" />
+    <Content Include="Styles\MaintainMaterial.css" />
+    <Content Include="Styles\MaintainSupplier.css" />
+    <Content Include="Styles\MaterialInspectionDatalist.css" />
+    <Content Include="Styles\MaterialNonConformList.css" />
+    <Content Include="Styles\MaterialsList.css" />
+    <Content Include="Styles\PurchaseList.css" />
+    <Content Include="Styles\RoleManage.css" />
+    <Content Include="Styles\SupplierQualityReport.css" />
+    <Content Include="Styles\Template.css" />
+    <Content Include="Styles\UserManage.css" />
+    <Content Include="Styles\VerificationMeasures.css" />
+    <Content Include="Materials\SupplierQualityReport.aspx" />
+    <Content Include="Temp\readme.txt" />
+    <None Include="VerificationMeasures.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="web页面说明.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddComplaint.aspx.cs">
+      <DependentUpon>AddComplaint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddComplaint.aspx.designer.cs">
+      <DependentUpon>AddComplaint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddCorrectPrevention.aspx.cs">
+      <DependentUpon>AddCorrectPrevention.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCorrectPrevention.aspx.designer.cs">
+      <DependentUpon>AddCorrectPrevention.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materials\AddMaterialNonConform.aspx.cs">
+      <DependentUpon>AddMaterialNonConform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materials\AddMaterialNonConform.aspx.designer.cs">
+      <DependentUpon>AddMaterialNonConform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materials\AddPurchase.aspx.cs">
+      <DependentUpon>AddPurchase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materials\AddPurchase.aspx.designer.cs">
+      <DependentUpon>AddPurchase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RoleManage.aspx.cs">
+      <DependentUpon>RoleManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RoleManage.aspx.designer.cs">
+      <DependentUpon>RoleManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserManage.aspx.cs">
+      <DependentUpon>UserManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserManage.aspx.designer.cs">
+      <DependentUpon>UserManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CauseAnalysis.aspx.cs">
+      <DependentUpon>CauseAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CauseAnalysis.aspx.designer.cs">
+      <DependentUpon>CauseAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloseCorrectPrevention.aspx.cs">
+      <DependentUpon>CloseCorrectPrevention.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseCorrectPrevention.aspx.designer.cs">
+      <DependentUpon>CloseCorrectPrevention.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\RTQMMembershipProvider.cs" />
+    <Compile Include="Code\RTQMRoleProvider.cs" />
+    <Compile Include="ComplaintList.aspx.cs">
+      <DependentUpon>ComplaintList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComplaintList.aspx.designer.cs">
+      <DependentUpon>ComplaintList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComplaintQA.aspx.cs">
+      <DependentUpon>ComplaintQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComplaintQA.aspx.designer.cs">
+      <DependentUpon>ComplaintQA.aspx</DependentUpon>
+    </Compile>
+    <None Include="CorrectPreventionList.aspx.cs">
+      <DependentUpon>CorrectPreventionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </None>
+    <Compile Include="CorrectPreventionList.aspx.designer.cs">
+      <DependentUpon>CorrectPreventionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materials\IncomingQualityReport.aspx.cs">
+      <DependentUpon>IncomingQualityReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materials\IncomingQualityReport.aspx.designer.cs">
+      <DependentUpon>IncomingQualityReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MaintainMaterial.aspx.cs">
+      <DependentUpon>MaintainMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MaintainMaterial.aspx.designer.cs">
+      <DependentUpon>MaintainMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MaintainSupplier.aspx.cs">
+      <DependentUpon>MaintainSupplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MaintainSupplier.aspx.designer.cs">
+      <DependentUpon>MaintainSupplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materials\MaterialInspectionDatalist.aspx.cs">
+      <DependentUpon>MaterialInspectionDatalist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materials\MaterialInspectionDatalist.aspx.designer.cs">
+      <DependentUpon>MaterialInspectionDatalist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materials\MaterialNonConformList.aspx.cs">
+      <DependentUpon>MaterialNonConformList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materials\MaterialNonConformList.aspx.designer.cs">
+      <DependentUpon>MaterialNonConformList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materials\MaterialsList.aspx.cs">
+      <DependentUpon>MaterialsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materials\MaterialsList.aspx.designer.cs">
+      <DependentUpon>MaterialsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materials\PrintDisqualificationReport.aspx.cs">
+      <DependentUpon>PrintDisqualificationReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materials\PrintDisqualificationReport.aspx.designer.cs">
+      <DependentUpon>PrintDisqualificationReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Materials\PurchaseList.aspx.cs">
+      <DependentUpon>PurchaseList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materials\PurchaseList.aspx.designer.cs">
+      <DependentUpon>PurchaseList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materials\SupplierQualityReport.aspx.cs">
+      <DependentUpon>SupplierQualityReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materials\SupplierQualityReport.aspx.designer.cs">
+      <DependentUpon>SupplierQualityReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template.Master.cs">
+      <DependentUpon>Template.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template.Master.designer.cs">
+      <DependentUpon>Template.Master</DependentUpon>
+    </Compile>
+    <Compile Include="VerificationMeasures.aspx.cs">
+      <DependentUpon>VerificationMeasures.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerificationMeasures.aspx.designer.cs">
+      <DependentUpon>VerificationMeasures.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lgsoft.Infrastructure.CrossCutting\Lgsoft.SF.Infrastructure.CrossCutting.csproj">
+      <Project>{527A8D95-EEE9-4B25-AD43-28AF47A28197}</Project>
+      <Name>Lgsoft.SF.Infrastructure.CrossCutting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RTQM.Application\RTQM.Application.csproj">
+      <Project>{63051E35-33AB-4A19-A62C-FC6AFE9B9200}</Project>
+      <Name>RTQM.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RTQM.Utility\RTQM.Utility.csproj">
+      <Project>{BB30A318-D080-41EA-8E21-134865FE5DC6}</Project>
+      <Name>RTQM.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Template.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Script\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Materials\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Template\raw materail incoming report template.xls" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>13125</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

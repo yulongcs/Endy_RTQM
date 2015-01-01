@@ -1,0 +1,39 @@
+﻿.ACP-title
+{
+    height: 30px;line-height: 30px;font-weight: bold;font-size:14px
+}
+.ACP-main 
+{
+    width:320px;height: 260px;border: solid 1px #60bfbf;
+    margin: 50px auto;
+}
+.ACP-mainItem
+{
+    width: 300px;height: 30px;font-size: 12px;
+    margin: 30px auto auto 30px;
+}
+.ACP-ItemTitle {
+    width: 100%;height: 30px;line-height: 30px;font-size: 12px;
+    margin: 30px auto auto 30px; display:inline
+}
+.ACP-ItemText {
+    width: 250px;height: 50px;
+    margin-left: 30px; 
+}
+.ACP-Unreson {
+    width: 250px;min-width: 250px; max-width: 250px;height: 50px;min-height: 50px; max-height: 50px;font-size: 12px;
+}
+.ACP-mainBts {
+    width: 260px;height: 30px;
+    margin: 20px auto;
+}
+.ACP-mainBtY 
+{
+    float: left;
+    width: 56px;height: 30px;
+}
+.ACP-mainBtN 
+{
+    float:right;
+    width: 56px;height: 30px;
+}

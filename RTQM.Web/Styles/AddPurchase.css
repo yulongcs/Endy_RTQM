@@ -1,0 +1,43 @@
+﻿/*标题*/
+.AP-title
+{
+    height: 30px;line-height: 30px;font-size: 12px; 
+}
+/*内容主体*/
+.AP-main 
+{
+    width:350px;height: 235px;border: solid 4px #CCC;
+}
+/*内容选项*/
+.AP-mainItem
+{
+    width: 300px;height: 30px;font-size: 12px;
+    margin: 45px auto auto 50px;
+}
+/*内容部分按钮*/
+.AP-mainBts {
+    width: 160px;height: 30px;
+    margin: 20px auto;
+}
+/*内容部分确认按钮*/
+.AP-mainBtY 
+{
+    float: left;
+    width: 56px;height: 30px;
+}
+/*内容部分取消按钮*/
+.AP-mainBtN 
+{
+    float:right;
+    width: 56px;height: 30px;
+}
+.AP-mainBtY input,.AP-mainBtN input{width:40px;height:24px;}
+/*设置菜单关闭，当页面处于大菜单中，菜单打开*/
+#TP-menuItemArea1
+{
+    display:block
+}
+/*设置当前页对应的菜单的样式*/
+#AddPurchase{
+    color: #099;
+}

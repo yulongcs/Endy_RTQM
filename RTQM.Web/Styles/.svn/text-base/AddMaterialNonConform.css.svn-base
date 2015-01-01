@@ -1,0 +1,37 @@
+﻿.AMNC-title
+{
+    height: 30px;line-height: 30px;font-weight: bold;font-size:14px
+}
+.AMNC-main 
+{
+    width:100%;height: 300px;
+    margin: 0px auto;
+}
+.AMNC-BasicInfor {
+    width: 730px;height: 60px;line-height: 30px;border:1px solid #a0d9d8;
+    margin: 10px auto;
+}
+.AMNC-BasicInforItem {
+    width: 200px;height: 30px;line-height: 30px;font-size: 12px;
+    float: left;margin-left: 20px; display:inline
+}
+.AMNC-AddInfor {
+    width: 730px;
+    margin: 0px auto;
+}
+.AMNC-AddInforItem {
+    width: 100%;font-size: 12px;
+    margin: 10px auto;
+}
+.AMNC-AddInput {
+    width: 730px;height: 50px;clear: both;
+    margin: 10px auto;
+}
+.AMNC-Bts {
+    width: 150px;height: 30px;
+    margin: 10px auto;
+ }
+ .AMNC-Bt {
+     width: 60px;
+     float: left;
+ }

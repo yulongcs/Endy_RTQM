@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BB30A318-D080-41EA-8E21-134865FE5DC6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lgsoft.RTQM.Utility</RootNamespace>
+    <AssemblyName>RTQM.Utility</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.3.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.4.3.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\ExcelLibs\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.2.1.505.0\lib\NET35\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.2.1.505.0\lib\NET35\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExcelLibs\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Container.cs" />
+    <Compile Include="Export\DateRoundTypes.cs" />
+    <Compile Include="Export\DayRoundStrategy.cs" />
+    <Compile Include="Export\FinanceYearRoundStrategy.cs" />
+    <Compile Include="Export\MonthRoundStrategy.cs" />
+    <Compile Include="Export\RawMaterialQualityReportUtility.cs" />
+    <Compile Include="Export\RawMaterialSummaryCalculator.cs" />
+    <Compile Include="Export\RawMaterialSummaryData.cs" />
+    <Compile Include="Export\SummaryCalculatorBase.cs" />
+    <Compile Include="Export\DateRoundStrategy.cs" />
+    <Compile Include="Export\SupplierQualityReportUtility.cs" />
+    <Compile Include="Export\TableDataCollector.cs" />
+    <Compile Include="Export\WeekRoundStrategy.cs" />
+    <Compile Include="ListExportUtility.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lgsoft.Infrastructure.CrossCutting\Lgsoft.SF.Infrastructure.CrossCutting.csproj">
+      <Project>{527A8D95-EEE9-4B25-AD43-28AF47A28197}</Project>
+      <Name>Lgsoft.SF.Infrastructure.CrossCutting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lgsoft.SF.Domain\Lgsoft.SF.Domain.csproj">
+      <Project>{03FFB0B7-7B21-4FBD-A083-C33E04223123}</Project>
+      <Name>Lgsoft.SF.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lgsoft.SF.Infrastructure.Data\Lgsoft.SF.Infrastructure.Data.csproj">
+      <Project>{2869C18B-B606-47D6-B571-ECEEA480638F}</Project>
+      <Name>Lgsoft.SF.Infrastructure.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RTQM.Application\RTQM.Application.csproj">
+      <Project>{63051E35-33AB-4A19-A62C-FC6AFE9B9200}</Project>
+      <Name>RTQM.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RTQM.Domain\RTQM.Domain.csproj">
+      <Project>{16111790-17DF-494E-87DB-F5A5ABC6D0AB}</Project>
+      <Name>RTQM.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RTQM.Infrastructure.CrossCutting.NetFramework\RTQM.Infrastructure.CrossCutting.NetFramework.csproj">
+      <Project>{396D33F2-651F-4772-8B96-1B99C7F484A6}</Project>
+      <Name>RTQM.Infrastructure.CrossCutting.NetFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RTQM.Infrastructure.Data\RTQM.Infrastructure.Data.csproj">
+      <Project>{F1E828CC-B177-4EA4-8919-119A44E10D91}</Project>
+      <Name>RTQM.Infrastructure.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

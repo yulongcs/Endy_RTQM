@@ -1,0 +1,54 @@
+﻿.h25{height:25px;}
+.h45{height:45px;}
+/*标题*/
+.SQR-title
+{
+  height: 30px;line-height: 30px;font-weight: bold;font-size:14px
+}
+
+/*内容主体*/
+.SQR-main 
+{
+    width:570px;height: auto;border: solid 4px #CCC;
+    margin: 15px auto;
+}
+/*日期DIV区*/
+.SQR-Date {
+    width: 570px; height: 30px;font-size: 12px;
+    margin-top: 60px;display: inline;
+}
+/*日期input*/
+.SQR-SearchInput {
+    width: 120px;
+}
+/*功能区*/
+.SQR-OperationArea {
+    width: 570px;
+    margin-top: 20px;
+}
+/*功能区项目*/
+.SQR-OperationItem {font-size: 12px;float: left; padding:0 5px 0 5px;}
+.shixjStyle{width:320px;height:210px; overflow-y:scroll;overflow-x:hidden; border: solid 1px #CCC;padding-left:8px;}
+/*功能区按钮，添加，删除*/
+.SQR-Operationbt {margin: 45px auto;}
+/*功能区底部按钮*/
+.SQR-Bts {
+    width: 120px;height: 45px;
+}
+.s-b-btn{width:100px;height:24px;line-height:24px;margin-left:90px;}
+/*设置菜单关闭，当页面处于大菜单中，菜单打开*/
+#TP-menuItemArea1
+{
+    display:block
+}
+/*设置当前页对应的菜单的样式*/
+#SupplierQualityReport {
+    color: #099;
+}
+.btn{width:60px; height:24px; line-height:24px;}
+.s-d-label{width:85px; text-align:right; float:left;}
+.s-o-listbox{width:140px;line-height:24px;}
+.s-o-listbox label{margin-left:5px;}
+.supplierList{}
+.supplierList li{line-height:24px;width:150px; overflow:hidden; height:24px;}
+.supplierList .checkbox{margin-right:5px; }

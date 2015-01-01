@@ -1,0 +1,8 @@
+E:\项目\SW_CST-2011-010-外部协助-实时质量管理监控系统\04-项目编码\RTQM\RTQM.Biz\bin\Debug\RTQM.Biz.dll.config
+E:\项目\SW_CST-2011-010-外部协助-实时质量管理监控系统\04-项目编码\RTQM\RTQM.Biz\bin\Debug\RTQM.Biz.dll
+E:\项目\SW_CST-2011-010-外部协助-实时质量管理监控系统\04-项目编码\RTQM\RTQM.Biz\bin\Debug\RTQM.Biz.pdb
+E:\项目\SW_CST-2011-010-外部协助-实时质量管理监控系统\04-项目编码\RTQM\RTQM.Biz\bin\Debug\EntityFramework.dll
+E:\项目\SW_CST-2011-010-外部协助-实时质量管理监控系统\04-项目编码\RTQM\RTQM.Biz\bin\Debug\EntityFramework.xml
+E:\项目\SW_CST-2011-010-外部协助-实时质量管理监控系统\04-项目编码\RTQM\RTQM.Biz\obj\Debug\ResolveAssemblyReference.cache
+E:\项目\SW_CST-2011-010-外部协助-实时质量管理监控系统\04-项目编码\RTQM\RTQM.Biz\obj\Debug\RTQM.Biz.dll
+E:\项目\SW_CST-2011-010-外部协助-实时质量管理监控系统\04-项目编码\RTQM\RTQM.Biz\obj\Debug\RTQM.Biz.pdb

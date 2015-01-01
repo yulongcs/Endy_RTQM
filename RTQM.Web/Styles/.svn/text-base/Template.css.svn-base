@@ -1,0 +1,127 @@
+﻿
+/*页面基本样式*/
+body { margin: 0px;padding: 0px; background: #FFF;font-family: "宋体";font-size: 12px;}
+a{font-size:12px}
+body{ font: normal 12px/1.5 'Tahoma', 'simsun';}
+.f12{ font-family: 'Tahoma', 'simsun';}
+.f14,.f15,.f16,.f18,.f20,.f27{font-family:"Microsoft Yahei","微软雅黑",Tahoma,Arial,Helvetica,STHeiti; }
+/*清除浮动*/
+.clear{clear: both}
+/*日期控件的关闭图标*/
+.Date-Empty {
+    margin-left: -23px;display: inline; cursor:pointer
+}
+/* 页面top*/
+.TP-top
+{
+    width: 100%; height: 83px; overflow: hidden
+}
+/*页面LOGO图片*/
+.TP-top-logo
+{
+    margin: 9px auto auto 32px;float: left;display: inline;
+    width: 136px;height: 60px;
+}
+/*页面LOGO文本*/
+.TP-top-logoText 
+{
+    margin-top: 9px;display: inline; float: left;
+    width: 250px;height: 60px;line-height: 60px; font-family: 微软雅黑;font-size: 24px;font-weight: bold;  
+}
+/*用户信息*/
+.TP-top-userText
+{
+    float: right;margin: 60px 20px auto auto;display: inline;text-align: right;
+    width: 400px;height: 20px;line-height: 20px;font-size: 12px;
+}
+/*用户名*/
+.TP-top-user
+{
+    font-size: 12px;display: inline;
+}
+/*登出*/
+.TP-top-loginOut
+{
+    font-size: 12px;display: inline;
+}
+/*top下面的线*/
+.TP-topline
+{
+    position: absolute;top:83px;left: 0px;right: 0px;
+    width: 100%; height: 5px;background: url('/Images/topline.jpg') repeat-x
+ }
+ /*左边*/
+.TP-leftmain
+{
+     position: absolute;top: 88px;left: 0px;overflow: auto;
+     width: 168px;height: 520px;background:  url('/Images/TP-leftmainBg.jpg') repeat-y
+}
+/*左边的导航*/
+.TP-menu {
+    width: 151px;font-size: 12px;
+    margin-top: 10px;display:inline
+}
+/*左边大标题*/
+.TP-menuItemTitle a
+{
+    width: 151px;height: 34px;line-height: 34px;font-size:16px;color: #FFF;font-weight:500;text-decoration: none;text-indent: 1em; background:url(../images/blue.png) repeat-x top left;cursor: default;
+    float: left;margin:10px auto auto 10px;display:block;
+}
+/*左边大标题Hover*/
+.TP-menuItemTitle a:hover {
+    background-position:bottom right
+}
+/*子菜单菜单区*/
+.TP-menuItemArea 
+{
+    clear: both;
+    display: none;width: 151px;
+}
+/*子菜单*/
+.TP-menuItem
+{
+    width:120px;height: 25px;line-height: 25px;font-size: 12px;
+    float: left;margin-left: 30px;display: inline;
+  }
+.TP-menuItem a {
+    color: #333;text-decoration: none;font-size: 12px;
+}
+.TP-menuItem a:hover{
+    color: #099;text-decoration:none
+}
+/*子菜单下面的线*/
+.TP-menuline
+{
+    float: left;
+    width: 151px;height: 2px;margin-left: 10px;display: inline; background:  url('/Images/TP-menuline.jpg') repeat-x
+}
+/*右边*/
+.TP-rightmain
+{
+    position: absolute;top: 88px;left: 180px;overflow :auto;
+     height: 520px;
+}
+/*下部分隔线*/
+.TP-bottomline
+{
+    position: absolute;top:608px;left:0px;
+    width:100%; height: 5px;background: url('/Images/topline.jpg') repeat-x;
+ }
+ /*底部*/
+.TP-bottom
+{
+    position: absolute;top: 613px;left: 0px;text-align: center;
+    width:100%;  height: 40px;
+}
+/*版权信息*/
+.TP-coryright
+{
+   height: 20px;line-height: 20px; font-size: 12px;color: #333;
+   margin: 20px;
+}
+/*列表排序按钮*/
+.Sort {
+    cursor: pointer;
+}
+.th-title{color:White;}
+.error{color:#F00;margin-left:5px;background:url("/Content/Style/Default/Images/formerror.jpg") left center no-repeat;}

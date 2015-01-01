@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repositories>
+  <repository path="..\Lgsoft.SF.Infrastructure.Data\packages.config" />
+  <repository path="..\RTQM.Application.Tests\packages.config" />
+  <repository path="..\RTQM.Application\packages.config" />
+  <repository path="..\RTQM.Biz.Tests\packages.config" />
+  <repository path="..\RTQM.Biz\packages.config" />
+  <repository path="..\RTQM.Infrastructure.Data\packages.config" />
+  <repository path="..\RTQM.Utility\packages.config" />
+  <repository path="..\RTQM.Web\packages.config" />
+</repositories>

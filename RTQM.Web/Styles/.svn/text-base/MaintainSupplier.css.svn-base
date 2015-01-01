@@ -1,0 +1,69 @@
+﻿/*标题*/
+.MS-title
+{
+    height: 30px;line-height: 30px;font-weight: bold;font-size:14px 
+}
+/*内容主体*/
+.MS-main {
+    margin: 0px auto;
+    width:400px;
+}
+/*搜索区*/
+.MS-menu 
+{
+    margin: 10px auto 10px auto;
+    width:100%;height: 30px;
+}
+/*搜索区搜索项目*/
+.MS-menuItem 
+{
+    float: left;
+    width: 200px;height: 30px;line-height: 30px;font-size: 12px;
+}
+/*供应商input*/
+.MS-Supplier{ width: 100px;}
+
+/*搜索按钮DIV*/
+.MS-select {
+    float: left;margin-top: 5px;display: inline;
+    width: 80px;height: 30px;
+}
+/*列表外部div*/
+.MS-view {
+    width:100%;height: 390px; 
+}
+/*列表table*/
+.ms-viewTable-holder{width: 100%;height: 350px; overflow-y:scroll;}
+.MS-viewTable {text-align:center;}
+/*列表标题*/
+.MS-viewTable th,.th-title-name,.th-title-op{
+    height: 25px;text-align: center; background: #099;font-size: 12px;line-height:25px; 
+}
+.MS-viewTable td{ height: 25px;}
+/*内容列*/
+.MS-viewitem1 {
+    width:260px;
+}
+.MS-viewitem2 {
+    width:140px;
+}
+.th-title-holder{}
+.th-title-name,.th-title-op{color:White;}
+.th-title-name{width:247px; margin-right:2px;}
+.th-title-op{width:150px;}
+.add-holder{margin-top:15px;}
+.MS-viewitem2 span {
+    color: blue; cursor: pointer
+}
+.MS-viewitem3 {width:110px;color: blue; cursor: pointer}
+/*列表中的编辑input*/
+.MS-viewTableInput{width: 95%}
+/*设置菜单关闭，当页面处于大菜单中，菜单打开*/
+#TP-menuItemArea3
+{
+    display:block
+}
+/*设置当前页对应的菜单的样式*/
+#MaintainSupplier {
+    color: #099;
+}

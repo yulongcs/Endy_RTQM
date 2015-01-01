@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{276AE6AC-0D8E-42C9-B776-D65204193F56}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebEzi.Control.ExtNet</RootNamespace>
+    <AssemblyName>WebEzi.Control.ExtNet</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ext.Net, Version=2.2.0.40838, Culture=neutral, PublicKeyToken=2e12ce3d0176cd87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Libs\Ext.Net\Ext.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Button\Button.cs" />
+    <Compile Include="Button\ImageButton.cs" />
+    <Compile Include="Button\LinkButton.cs" />
+    <Compile Include="Checkbox.cs" />
+    <Compile Include="CheckboxGroup.cs" />
+    <Compile Include="ComboBox\ComboBox.cs" />
+    <Compile Include="ComboBox\BaseComboBox.cs" />
+    <Compile Include="ComboBox\InsertTriggerComboBox.cs" />
+    <Compile Include="DateField.cs" />
+    <Compile Include="EmailTextField.cs" />
+    <Compile Include="FieldSet.cs" />
+    <Compile Include="FileUploadField.cs" />
+    <Compile Include="GridPanel\CheckboxSelectionModel .cs" />
+    <Compile Include="GridPanel\CheckColumn.cs" />
+    <Compile Include="GridPanel\Column.cs" />
+    <Compile Include="GridPanel\CommandColumn.cs" />
+    <Compile Include="GridPanel\MoneyColumn.cs" />
+    <Compile Include="GridPanel\DateColumn.cs" />
+    <Compile Include="GridPanel\GridCommand.cs" />
+    <Compile Include="GridPanel\GridPanel.cs" />
+    <Compile Include="GridPanel\GridView.cs" />
+    <Compile Include="GridPanel\ImageCommand.cs" />
+    <Compile Include="GridPanel\ImageCommandColumn.cs" />
+    <Compile Include="GridPanel\PagingToolbar.cs" />
+    <Compile Include="GridPanel\Parameter.cs" />
+    <Compile Include="GridPanel\RowEditor.cs" />
+    <Compile Include="GridPanel\RowExpander.cs" />
+    <Compile Include="GridPanel\RowNumbererColumn.cs" />
+    <Compile Include="GridPanel\RowSelectionModel.cs" />
+    <Compile Include="GridPanel\StatusBar.cs" />
+    <Compile Include="GridPanel\TemplateColumn.cs" />
+    <Compile Include="Hidden.cs" />
+    <Compile Include="HtmlEditor.cs" />
+    <Compile Include="Image.cs" />
+    <Compile Include="KeyMap\KeyBinding.cs" />
+    <Compile Include="KeyMap\KeyMap.cs" />
+    <Compile Include="Label.cs" />
+    <Compile Include="ListItem.cs" />
+    <Compile Include="Menu\Menu.cs" />
+    <Compile Include="Menu\MenuItem.cs" />
+    <Compile Include="MoneyTextField.cs" />
+    <Compile Include="MultiSelect.cs" />
+    <Compile Include="NumberField.cs" />
+    <Compile Include="Panel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Radio.cs" />
+    <Compile Include="RadioGroup.cs" />
+    <Compile Include="Store\ArrayReader.cs" />
+    <Compile Include="Store\Model.cs" />
+    <Compile Include="Store\ModelField.cs" />
+    <Compile Include="Store\Store.cs" />
+    <Compile Include="TabPanel.cs" />
+    <Compile Include="TextArea.cs" />
+    <Compile Include="TextField.cs" />
+    <Compile Include="TimeField.cs" />
+    <Compile Include="Toolbar\Toolbar.cs" />
+    <Compile Include="Toolbar\ToolbarFill.cs" />
+    <Compile Include="Toolbar\ToolbarSeparator.cs" />
+    <Compile Include="Toolbar\ToolbarSpacer.cs" />
+    <Compile Include="Validator\IValidator.cs" />
+    <Compile Include="Validator\ValidatorUtil.cs" />
+    <Compile Include="Window.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GridPanel\Resource\CellTextSelection.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Base\WebEzi.Base\WebEzi.Base.csproj">
+      <Project>{EDDFC862-FAD5-4179-9EA5-F697555672F0}</Project>
+      <Name>WebEzi.Base</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

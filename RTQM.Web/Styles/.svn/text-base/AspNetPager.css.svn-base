@@ -1,0 +1,45 @@
+﻿
+       .paginator
+        {
+           text-align: center;
+            font: 12px 宋体,Arial, Helvetica, sans-serif;
+            padding: 10px 20px 0px 0px;
+            margin: 10px;
+        }
+        .paginator a
+        {
+            color:#79a0da;
+            padding: 3px 6px;
+            border: solid 1px #79a0da;
+            background: #fff;
+            text-decoration: none;
+            margin-right: 2px;
+        }
+        .paginator a:visited
+        {
+            padding: 3px 6px;
+            border: solid 1px #79a0da;
+            background: #fff;
+            text-decoration: none;
+        }
+        .paginator .cpb
+        {
+            padding: 3px 6px;
+            background: #79a0da;
+            font-size: 12px;
+            color: #FFF;
+            border: none;
+        }
+        .paginator a:hover
+        {
+            _color: #79a0da;
+            text-decoration:underline;
+        }
+      .paginator input{
+          text-align: center;  
+          
+      }
+      .paginator input[type="submit"] {
+          background: #87C421;
+          cursor:pointer;
+      }

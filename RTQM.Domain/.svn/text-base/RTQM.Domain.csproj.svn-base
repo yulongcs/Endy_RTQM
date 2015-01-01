@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{16111790-17DF-494E-87DB-F5A5ABC6D0AB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lgsoft.RTQM.Domain</RootNamespace>
+    <AssemblyName>RTQM.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseInfoModule\Aggregates\MaterialAgg\IMaterialRepository.cs" />
+    <Compile Include="BaseInfoModule\Aggregates\MaterialAgg\Material.cs" />
+    <Compile Include="BaseInfoModule\Aggregates\MaterialAgg\MaterialFactory.cs" />
+    <Compile Include="BaseInfoModule\Aggregates\MaterialAgg\MaterialSpecifications.cs" />
+    <Compile Include="BaseInfoModule\Aggregates\SupplierAgg\ISupplierRepository.cs" />
+    <Compile Include="BaseInfoModule\Aggregates\SupplierAgg\Supplier.cs" />
+    <Compile Include="BaseInfoModule\Aggregates\SupplierAgg\SupplierFactory.cs" />
+    <Compile Include="BaseInfoModule\Aggregates\SupplierAgg\SupplierSpecifications.cs" />
+    <Compile Include="DisqualificationReportModule\Aggregates\ReportAgg\DisqualificationReport.cs" />
+    <Compile Include="DisqualificationReportModule\Aggregates\ReportAgg\DisqualificationReportFactory.cs" />
+    <Compile Include="DisqualificationReportModule\Aggregates\ReportAgg\DisqualificationReportSpecifications.cs" />
+    <Compile Include="DisqualificationReportModule\Aggregates\ReportAgg\IDisqualificationReportRepository.cs" />
+    <Compile Include="FileModule\Aggregates\FileAgg\File.cs" />
+    <Compile Include="FileModule\Aggregates\FileAgg\FileFactory.cs" />
+    <Compile Include="FileModule\Aggregates\FileAgg\FileSpecifications.cs" />
+    <Compile Include="FileModule\Aggregates\FileAgg\IFileRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RawMaterialQulityModule\Aggregates\OrderLineAgg\InspectResult.cs" />
+    <Compile Include="RawMaterialQulityModule\Aggregates\OrderLineAgg\IOrderLineRepository.cs" />
+    <Compile Include="RawMaterialQulityModule\Aggregates\OrderLineAgg\OrderLine.cs" />
+    <Compile Include="RawMaterialQulityModule\Aggregates\OrderLineAgg\OrderLineFactory.cs" />
+    <Compile Include="RawMaterialQulityModule\Aggregates\OrderLineAgg\OrderLineSpecifications.cs" />
+    <Compile Include="RawMaterialQulityModule\Aggregates\PurchaseOrderAgg\IPurchaseOrderRepository.cs" />
+    <Compile Include="RawMaterialQulityModule\Aggregates\PurchaseOrderAgg\PurchaseOrder.cs" />
+    <Compile Include="RawMaterialQulityModule\Aggregates\PurchaseOrderAgg\PurchaseOrderFactory.cs" />
+    <Compile Include="RawMaterialQulityModule\Aggregates\PurchaseOrderAgg\PurchaseOrderSpecifications.cs" />
+    <Compile Include="SecurityModule\Aggregates\RoleAgg\IRoleRepository.cs" />
+    <Compile Include="SecurityModule\Aggregates\RoleAgg\Role.cs" />
+    <Compile Include="SecurityModule\Aggregates\RoleAgg\RoleSpecifications.cs" />
+    <Compile Include="SecurityModule\Aggregates\UserAgg\IUserRepository.cs" />
+    <Compile Include="SecurityModule\Aggregates\UserAgg\User.cs" />
+    <Compile Include="SecurityModule\Aggregates\UserAgg\UserFactory.cs" />
+    <Compile Include="SecurityModule\Aggregates\UserAgg\UserSpecifications.cs" />
+    <Compile Include="SecurityModule\Services\IUserRoleService.cs" />
+    <Compile Include="SecurityModule\Services\UserRoleService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lgsoft.SF.Domain\Lgsoft.SF.Domain.csproj">
+      <Project>{03FFB0B7-7B21-4FBD-A083-C33E04223123}</Project>
+      <Name>Lgsoft.SF.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

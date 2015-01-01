@@ -1,0 +1,63 @@
+﻿/*标题*/
+.VM-title
+{
+   height: 30px;line-height: 30px;font-weight: bold;font-size:14px
+}
+/*内容主体*/
+.VM-main 
+{
+    width:100%;height: 300px;
+    margin: 0px auto;
+}
+/*列表外部div*/
+.VM-view {
+    width:100%;height: 200px;overflow: auto;
+    float: left;margin-top: 10px;display: inline;
+}
+/*列表table*/
+.VM-viewTable {
+    width: 1320px;
+}
+/*列表标题*/
+.VM-viewTable th {
+    height: 25px;text-align:center; background: #099;font-size: 12px;
+}
+.VM-viewTable td {
+    height: 20px;font-size: 12px
+}
+/*列表内容列*/
+.VM-viewitem1 {
+    width: 50px;
+}
+.VM-viewitem2 {
+   width: 115px; 
+}
+.VM-viewitem3 {
+   width: 115px;
+}
+.VM-viewitem4 {
+  width: 115px;  
+}
+.VM-viewitem5 {
+  width: 115px; 
+}
+.VM-viewitem6 {
+   width: 115px;
+}
+.VM-viewitem7 {
+   width: 115px; 
+}
+.VM-viewitem7 {
+     color: blue;cursor: pointer; text-align: center
+}
+/*列表中的编辑input*/
+.VM-viewTableInput
+{
+    width: 95%
+}
+/*按钮div*/
+.VM-mainBt
+{
+    width: 100px;height: 30px;
+    margin: 10px auto;            
+}

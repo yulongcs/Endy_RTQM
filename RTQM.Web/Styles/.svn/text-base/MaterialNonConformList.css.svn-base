@@ -1,0 +1,86 @@
+﻿/*标题*/
+.MNCL-title
+{
+    height: 30px;line-height: 30px;font-weight: bold;font-size:14px
+}
+
+/*内容主体*/
+.MNCL-main 
+{
+    width:100%;height: 450px;
+    margin: 0px auto;
+}
+/*搜索区*/
+.MNCL-SearchArea {
+    width: 800px; height: 30px;line-height: 30px;font-size: 12px;
+    float: left;margin: 10px auto 10px auto;
+}
+/*搜索区搜索项目*/
+.MNCL-SearchItem {
+    width: 180px;height: 30px;font-size: 12px;
+    float: left;margin-left: 10px; display: inline
+}
+/*搜索区input*/
+.MNCL-SearchInput {
+    width: 100px;
+}
+/*搜索区搜索DIV*/
+.MNCL-select {
+    width: 56px;height: 20px;
+    float:left;
+}
+.selectBt {
+    cursor: pointer;margin-top:5px;
+}
+/*列表外部div*/
+.MNCL-view {
+    width: 100%; height: 390px;overflow: auto; 
+    float: left;
+}
+/*列表table*/
+.MNCL-viewTable {
+    width:100%;
+    text-align:center;
+}
+/*列表标题*/
+.MNCL-viewTable th {
+    height: 25px;text-align:center; background: #099;font-size: 12px;
+}
+.MNCL-viewTable td {
+    height: 20px;line-height: 20px; font-size: 12px;
+}
+/*列表内容列*/
+.MNCL-viewitem1 {
+    width: 100px; 
+}
+.MNCL-viewitem2 {
+   width: 115px; 
+}
+.MNCL-viewitem3 {
+   width: 115px; 
+}
+.MNCL-viewitem4 {
+  width: 115px;  
+}
+.MNCL-viewitem5 {
+  width: 115px;  
+}
+.MNCL-viewitem6 {
+   width: 115px; 
+}
+.MNCL-viewitem7
+{
+    width: 150px;
+}
+.MNCL-viewitem7 span {
+    color: blue; cursor: pointer
+}
+/*设置菜单关闭，当页面处于大菜单中，菜单打开*/
+#TP-menuItemArea2
+{
+    display:block
+}
+/*设置当前页对应的菜单的样式*/
+#MaterialNonConformList{
+    color: #099;
+}
